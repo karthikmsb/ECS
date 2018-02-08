@@ -15,9 +15,9 @@ public class CommonFunctions {
 
     public void openBrowser()
     {
-        System.setProperty("webdriver.chrome.driver",FilePaths.chromepath);
+        System.setProperty("webdriver.gecko.driver",System.getProperty("/Users/karthik/Desktop/Selenium/geckodriver"));
         //System.setProperty("webdriver.chrome.driver",FilePaths.chromepath);
-        driver=new ChromeDriver();
+        driver=new FirefoxDriver();
     }
     public void closeBrowser()
     {
